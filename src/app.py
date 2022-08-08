@@ -12,6 +12,30 @@ def ping():
 def usersHandler():
     return jsonify({'users': users})
 
+@app.route('/mis-recetas', methods=['GET'])
+def mis_recetas():
+    recetasCard = [
+    {
+        "id": 1,
+        "nombreReceta": "Arroz blanco",
+        "favorito": False,
+        "colorCard": "tomato"
+    },
+    {
+        "id": 2,
+        "nombreReceta": "Cazuela de marizcos en salsa de ajo",
+        "favorito": False,
+        "colorCard": "tomato"
+    },
+    {
+        "id": 3,
+        "nombreReceta": "Ceviche",
+        "favorito": True,
+        "colorCard": "tomato"
+    }
+]
+    return jsonify(recetasCard)
+
 
 @app.after_request
 def after(response):
