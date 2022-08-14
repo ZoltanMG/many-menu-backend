@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+MANY_MENU_MYSQL_USER=many_menu MANY_MENU_MYSQL_PWD=many_menu_pwd MANY_MENU_MYSQL_HOST=localhost MANY_MENU_MYSQL_DB=many_menu_db python3 -m api.app
