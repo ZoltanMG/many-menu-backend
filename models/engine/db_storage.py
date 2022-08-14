@@ -16,7 +16,6 @@ class DBStorage:
         MANY_MENU_MYSQL_DB = getenv('MANY_MENU_MYSQL_DB')
         MANY_MENU_ENV = getenv('MANY_MENU_ENV')
         
-        print("--------------", MANY_MENU_MYSQL_HOST, MANY_MENU_MYSQL_DB)
         self.__engine = create_engine('mysql+mysqldb://{}:{}@{}/{}'.
                                       format(MANY_MENU_MYSQL_USER,
                                              MANY_MENU_MYSQL_PWD,
